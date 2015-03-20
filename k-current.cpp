@@ -71,7 +71,7 @@ static DefaultGUIModel::variable_t vars[] =
 static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
 
 gK::gK(void) :
-  DefaultGUIModel("Gk", ::vars, ::num_vars)
+  DefaultGUIModel("K Channel", ::vars, ::num_vars)
 {
   setWhatsThis(
       "<p><b>Gk:</b><br>This module presents an example of a potassium ion channel where"
