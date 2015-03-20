@@ -16,9 +16,9 @@
 
  */
 
-#include <k-current.h>
+#include <gK.h>
 #include <math.h>
-#include <QtGui>
+#include <qwhatsthis.h>
 
 static inline double
 a_inf(double V)
@@ -73,14 +73,14 @@ static size_t num_vars = sizeof(vars) / sizeof(DefaultGUIModel::variable_t);
 gK::gK(void) :
   DefaultGUIModel("Gk", ::vars, ::num_vars)
 {
-  setWhatsThis(
+  QWhatsThis::add(
+      this,
       "<p><b>Gk:</b><br>This module presents an example of a potassium ion channel where"
         "I = G_K_max*a^3*b*(Vm-E_K). </p>");
   createGUI(vars, num_vars);
   initParameters();
-  update(INIT);
+  update( INIT);
   refresh();
-  QTimer::singleShot(0, this, SLOT(resizeMe()));
 }
 
 gK::~gK(void)

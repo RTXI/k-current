@@ -1,8 +1,8 @@
-PLUGIN_NAME = k_current
+PLUGIN_NAME = gK
 
-HEADERS = k-current.h
+HEADERS = gK.h
 
-SOURCES = k-current.cpp
+SOURCES = gK.cpp \
 
 LIBS = 
 
