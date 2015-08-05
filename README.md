@@ -7,7 +7,7 @@
 
 <!--start-->
 
-This module presents an example of a potassium ion channel where I = G\_K\_max\*a^3\*b\*(Vm-E\_K)  
+This module presents an example of a potassium ion channel where I = G\_K\_max\*a^3\*b\*(Vm-E\_K).  
 
 <!--end-->
 
@@ -21,10 +21,10 @@ This module presents an example of a potassium ion channel where I = G\_K\_max\*
 1. G_K_max - mS/cm^2
 2. E_K - mV
 3. Junc. Pot. - junction potential (mV)
-4. rate - number of integrations per time step
+4. rate - number of integrations per real-time period
 
 ####States
 1. Vm2 - membranve potential (mV), same as input
 2. a - a-type potassium activation
-3. b - a-typle potassium inactivation
+3. b - a-type potassium inactivation
 4. Time (s) - Time (s)
