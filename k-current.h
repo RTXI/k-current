@@ -23,37 +23,30 @@
 class gK : public DefaultGUIModel
 {
 
-public:
+	public:
+		gK(void);
+		virtual ~gK(void);
 
-  gK(void);
-  virtual
-  ~gK(void);
+		virtual void execute(void);
 
-  virtual void
-  execute(void);
+	protected:
+		virtual void update(DefaultGUIModel::update_flags_t);
 
-protected:
-
-  virtual void
-  update(DefaultGUIModel::update_flags_t);
-
-private:
-
-  void
-  initParameters();
-  double Vm;
-  double a;
-  double b;
-  double da;
-  double db;
-  double period;
-  int steps;
-  double G_K_max;
-  double E_K;
-  double rate;
-  double jpot;
-  double dt;
-  double Iout;
-  double systime;
-  long long count;
+	private:
+		void initParameters();
+		double Vm;
+		double a;
+		double b;
+		double da;
+		double db;
+		double period;
+		int steps;
+		double G_K_max;
+		double E_K;
+		double rate;
+		double jpot;
+		double dt;
+		double Iout;
+		double systime;
+		long long count;
 };
